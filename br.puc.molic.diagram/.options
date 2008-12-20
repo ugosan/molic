@@ -1,0 +1,7 @@
+# Tracing options for the br.puc.molic.diagram plug-in
+
+# Common issues
+br.puc.molic.diagram/debug=false
+
+# Visual IDs
+br.puc.molic.diagram/debug/visualID=false

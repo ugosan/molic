@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+Teste de nota de copyright do Molic
+-->
+<plugin>
+
+
+ <extension id="MolicApplication" point="org.eclipse.core.runtime.applications">
+      <?gmfgen generated="true"?>
+      <application>
+         <run class="br.puc.molic.diagram.application.MolicApplication"/>
+      </application>
+   </extension>
+   
+<extension point="org.eclipse.gmf.runtime.diagram.ui.paletteProviders"> 
+  <paletteProvider class="org.eclipse.gmf.runtime.diagram.ui.providers.DefaultPaletteProvider">
+    <Priority name="High"/>
+      <contribution>
+     	<predefinedEntry id="standardGroup/zoomTool" remove="true"/>
+     	<predefinedEntry id="standardGroup/noteStack/noteTool" remove="true"/> 
+	<predefinedEntry id="standardGroup/noteStack/textTool" remove="true"/> 
+	<predefinedEntry id="standardGroup/noteStack/noteattachmentTool" remove="true"/>
+      </contribution>
+      <editor
+            id="br.puc.molic.diagram.part.MolicDiagramEditorID">
+      </editor>
+  </paletteProvider>
+</extension>
+
+
+   <extension point="org.eclipse.team.core.fileTypes">
+      <?gmfgen generated="true"?>
+      <fileTypes
+         type="text"
+         extension="molic_diagram">
+      </fileTypes>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <?gmfgen generated="true"?>
+      <parser
+         type="molic_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <?gmfgen generated="true"?>
+      <editor
+         id="br.puc.molic.diagram.part.MolicDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/MolicDiagramFile.gif"
+         extensions="molic_diagram"
+         default="true"
+         class="br.puc.molic.diagram.part.MolicDiagramEditor"
+         matchingStrategy="br.puc.molic.diagram.part.MolicMatchingStrategy"
+         contributorClass="br.puc.molic.diagram.part.MolicDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="br.puc.molic.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/MolicDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="br.puc.molic.diagram.part.MolicCreationWizard"
+  	     id="br.puc.molic.diagram.part.MolicCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+
+      <extension point="org.eclipse.ui.actionSets">
+      <?gmfgen generated="true"?>
+      <actionSet
+            label="%initDiagramActionLabel"
+            visible="true"
+            id="br.puc.molic.diagram.InitDiagram">
+         <action
+               label="%initDiagramActionLabel"
+               class="br.puc.molic.diagram.part.MolicInitDiagramFileAction"
+               menubarPath="file/additions"
+               id="br.puc.molic.diagram.InitDiagramAction">
+         </action>
+      </actionSet>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="MolicPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="br.puc.molic.diagram.part.MolicDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="MolicPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="br.puc.molic.diagram.part.MolicDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="MolicRender">
+         <Priority name="Lowest"/>
+         <ViewId id="br.puc.molic.diagram.part.MolicDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.contributionItemProviders">
+      <?gmfgen generated="true"?>
+      <contributionItemProvider class="br.puc.molic.diagram.providers.MolicContributionItemProvider">
+         <Priority name="Low"/>
+         <partContribution id="br.puc.molic.diagram.part.MolicDiagramEditorID">
+            <partAction menubarPath="/file/print" id="printPreviewAction"/>
+         </partContribution>
+      </contributionItemProvider>
+   </extension>
+
+   <extension point="org.eclipse.core.runtime.preferences">
+      <?gmfgen generated="true"?>
+      <initializer class="br.puc.molic.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages">
+      <?gmfgen generated="true"?>
+      <page
+            id="br.puc.molic.diagram.general"
+            name="%preference.page.title.br.puc.molic.diagram.general"
+            class="br.puc.molic.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="br.puc.molic.diagram.appearance"
+            name="%preference.page.title.br.puc.molic.diagram.appearance"
+            category="br.puc.molic.diagram.general"
+            class="br.puc.molic.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="br.puc.molic.diagram.connections"
+            name="%preference.page.title.br.puc.molic.diagram.connections"
+            category="br.puc.molic.diagram.general"
+            class="br.puc.molic.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="br.puc.molic.diagram.printing"
+            name="%preference.page.title.br.puc.molic.diagram.printing"
+            category="br.puc.molic.diagram.general"
+            class="br.puc.molic.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="br.puc.molic.diagram.rulersAndGrid"
+            name="%preference.page.title.br.puc.molic.diagram.rulersAndGrid"
+            category="br.puc.molic.diagram.general"
+            class="br.puc.molic.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+      <page
+            id="br.puc.molic.diagram.pathmaps"
+            name="%preference.page.title.br.puc.molic.diagram.pathmaps"
+            category="br.puc.molic.diagram.general"
+            class="org.eclipse.gmf.runtime.emf.ui.preferences.PathmapsPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="br.puc.molic.diagram"
+            labelProvider="br.puc.molic.diagram.sheet.MolicSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="br.puc.molic.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="br.puc.molic.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="br.puc.molic.diagram.sheet.MolicPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
+      <?gmfgen generated="true"?>
+      <viewProvider class="br.puc.molic.diagram.providers.MolicViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Molic"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints=""/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints=""/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="br.puc.molic.diagram.providers.MolicEditPartProvider">
+         <Priority name="Lowest"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="br.puc.molic.diagram.providers.MolicModelingAssistantProvider">
+         <Priority name="Lowest"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders">
+      <?gmfgen generated="true"?>
+      <IconProvider class="br.puc.molic.diagram.providers.MolicIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="br.puc.molic.diagram.providers.MolicParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.Diagram_1000"
+               name="%metatype.name.Diagram_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Diagram"
+               edithelper="br.puc.molic.diagram.edit.helpers.DiagramEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.Scene_2001"
+               name="%metatype.name.Scene_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Scene"
+               edithelper="br.puc.molic.diagram.edit.helpers.SceneEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.SystemProcess_2002"
+               name="%metatype.name.SystemProcess_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="SystemProcess"
+               edithelper="br.puc.molic.diagram.edit.helpers.SystemProcessEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.Monologue_2003"
+               name="%metatype.name.Monologue_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Monologue"
+               edithelper="br.puc.molic.diagram.edit.helpers.MonologueEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.UbiquitousAccess_2004"
+               name="%metatype.name.UbiquitousAccess_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="UbiquitousAccess"
+               edithelper="br.puc.molic.diagram.edit.helpers.UbiquitousAccessEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.OpeningPoint_2005"
+               name="%metatype.name.OpeningPoint_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="OpeningPoint"
+               edithelper="br.puc.molic.diagram.edit.helpers.OpeningPointEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.ClosingPoint_2006"
+               name="%metatype.name.ClosingPoint_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ClosingPoint"
+               edithelper="br.puc.molic.diagram.edit.helpers.ClosingPointEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.Utterance_4001"
+               name="%metatype.name.Utterance_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Utterance"
+               edithelper="br.puc.molic.diagram.edit.helpers.UtteranceEditHelper">
+            <param name="semanticHint" value="4001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="molic">
+         <metamodelType
+               id="br.puc.molic.diagram.BRTUtterance_4002"
+               name="%metatype.name.BRTUtterance_4002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="BRTUtterance"
+               edithelper="br.puc.molic.diagram.edit.helpers.BRTUtteranceEditHelper">
+            <param name="semanticHint" value="4002"/>
+         </metamodelType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="MolicClientContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="br.puc.molic.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="MolicClientContext">
+         <elementType ref="br.puc.molic.diagram.Diagram_1000"/>
+         <elementType ref="br.puc.molic.diagram.Scene_2001"/>
+         <elementType ref="br.puc.molic.diagram.SystemProcess_2002"/>
+         <elementType ref="br.puc.molic.diagram.Monologue_2003"/>
+         <elementType ref="br.puc.molic.diagram.UbiquitousAccess_2004"/>
+         <elementType ref="br.puc.molic.diagram.OpeningPoint_2005"/>
+         <elementType ref="br.puc.molic.diagram.ClosingPoint_2006"/>
+         <elementType ref="br.puc.molic.diagram.Utterance_4001"/>
+         <elementType ref="br.puc.molic.diagram.BRTUtterance_4002"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+
+  
+
+   <extension point="org.eclipse.ui.perspectives">
+      <?gmfgen generated="true"?>
+      <perspective
+            id="br.puc.molic.diagram.MolicPerspective"
+            name="%perspectiveName"
+            class="br.puc.molic.diagram.application.DiagramEditorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <?gmfgen generated="true"?>
+      <command
+            name="%openURIActionLabel"
+            description="%openURIActionDescription"
+            categoryId="org.eclipse.ui.category.file"
+            id="br.puc.molic.diagram.OpenURICommand"/>  
+      <command
+            name="%openActionLabel"
+            description="%openActionDescription"
+            categoryId="org.eclipse.ui.category.file"
+            id="br.puc.molic.diagram.OpenCommand"/>  
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <?gmfgen generated="true"?>
+      <key
+            commandId="br.puc.molic.diagram.OpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="br.puc.molic.diagram.OpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <?gmfgen generated="true"?>
+      <actionSet
+            label="%applicationActionSetLabel"
+            visible="true"
+            id="br.puc.molic.diagram.ActionSet">
+         <action
+               label="%newDiagramActionLabel"
+               class="br.puc.molic.diagram.application.DiagramEditorActionBarAdvisor$NewDiagramAction"
+               menubarPath="file/new/additions"
+               id="br.puc.molic.diagram.NewDiagramAction">
+         </action>
+         <action
+               label="%aboutActionLabel"
+               class="br.puc.molic.diagram.application.DiagramEditorActionBarAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="br.puc.molic.diagram.AboutAction">
+         </action>
+         <action
+               label="%openURIActionLabel"
+               definitionId="br.puc.molic.diagram.OpenURICommand"
+               class="br.puc.molic.diagram.application.DiagramEditorActionBarAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="br.puc.molic.diagram.OpenURIAction">
+         </action>
+         <action
+               label="%openActionLabel"
+               definitionId="br.puc.molic.diagram.OpenCommand"
+               class="br.puc.molic.diagram.application.DiagramEditorActionBarAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="br.puc.molic.diagram.OpenAction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension point="org.eclipse.ui.commands">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="br.puc.molic.diagram.part.MolicDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="br.puc.molic.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="br.puc.molic.diagram.updateDiagram"
+         contextId="br.puc.molic.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+   <extension
+         id="molicproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="br.puc.molic.diagram.MolicApplication"
+            name="MoLIC">
+         <property
+               name="appName"
+               value="MoLIC">
+         </property>
+      </product>
+   </extension><extension point="org.eclipse.ui.popupMenus">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            adaptable="false"
+            id="br.puc.molic.diagram.LoadResource"
+            objectClass="br.puc.molic.diagram.edit.parts.DiagramEditPart">
+         <action
+               class="br.puc.molic.diagram.part.MolicLoadResourceAction"
+               enablesFor="1"
+               id="br.puc.molic.diagram.LoadResourceAction"
+               label="%loadResourceActionLabel"
+               menubarPath="additions">
+         </action>
+      </objectContribution>           
+   </extension>
+
+</plugin>

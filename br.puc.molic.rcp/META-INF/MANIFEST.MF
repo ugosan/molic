@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rcp Plug-in
+Bundle-SymbolicName: br.puc.molic.rcp; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: br.puc.molic.rcp.Activator
+Bundle-Localization: plugin
+Require-Bundle: br.puc.molic,
+ br.puc.molic.edit,
+ br.puc.molic.editor,
+ org.eclipse.ui;visibility:=reexport,
+ org.eclipse.ui.ide;visibility:=reexport,
+ org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.draw2d;visibility:=reexport,
+ org.eclipse.gef;visibility:=reexport,
+ org.eclipse.ui.views;visibility:=reexport,
+ org.eclipse.core.resources;visibility:=reexport,
+ org.eclipse.jface.text;visibility:=reexport,
+ org.eclipse.ui.editors;visibility:=reexport,
+ org.eclipse.ui.workbench.texteditor;visibility:=reexport,
+ org.eclipse.platform;visibility:=reexport,
+ org.eclipse.update.configurator;visibility:=reexport,
+ org.eclipse.update.core;visibility:=reexport,
+ org.eclipse.update.scheduler;visibility:=reexport,
+ org.eclipse.update.ui;visibility:=reexport,
+ org.eclipse.gmf;visibility:=reexport,
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide;visibility:=reexport,
+ org.eclipse.compare;visibility:=reexport,
+ org.eclipse.gmf.runtime.emf.type.core;visibility:=reexport,
+ org.eclipse.gmf.runtime.diagram.ui,
+ br.puc.molic.diagram
+Eclipse-LazyStart: true

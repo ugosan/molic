@@ -1,0 +1,9 @@
+#Tue Mar 11 18:24:16 CET 2008
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/br.puc.molic/model/molic.genmodel
+gmf_dashboard/domainModel=platform\:/resource/br.puc.molic/model/molic.ecore
+gmf_dashboard/generationModel=platform\:/resource/br.puc.molic/model/molic.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/br.puc.molic/model/molic.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/br.puc.molic/model/molic.gmfmap
+gmf_dashboard/option_rcp=*
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/br.puc.molic/model/molic.gmftool

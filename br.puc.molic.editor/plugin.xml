@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+
+  <extension
+    point = "org.eclipse.ui.newWizards">
+    <category
+      id = "org.eclipse.emf.ecore.Wizard.category.ID"
+      name="%_UI_Wizard_category">
+    </category>
+    <wizard
+      id = "br.puc.molic.presentation.MolicModelWizardID"
+      name = "%_UI_MolicModelWizard_label"
+      class = "br.puc.molic.presentation.MolicModelWizard"
+      category = "org.eclipse.emf.ecore.Wizard.category.ID"
+      icon = "icons/full/obj16/MolicModelFile.gif">
+      <description>%_UI_MolicModelWizard_description</description>
+      <selection class = "org.eclipse.core.resources.IResource" />
+    </wizard>
+  </extension>
+
+  <extension point = "org.eclipse.ui.editors">
+    <editor
+        id = "br.puc.molic.presentation.MolicEditorID"
+        name = "%_UI_MolicEditor_label"
+        icon = "icons/full/obj16/MolicModelFile.gif"
+        extensions = "molic"
+        class = "br.puc.molic.presentation.MolicEditor" 
+        contributorClass="br.puc.molic.presentation.MolicActionBarContributor" >
+    </editor>
+  </extension>    
+</plugin>

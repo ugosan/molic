@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640px"
+   height="480px"
+   id="svg2160"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/home/ugo/workspace3.3/br.puc.molic.rcp"
+   sodipodi:docname="splash.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/ugo/workspace3.3/br.puc.molic.rcp/splash.png"
+   inkscape:export-xdpi="70.309998"
+   inkscape:export-ydpi="70.309998">
+  <defs
+     id="defs2162">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 240 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="640 : 240 : 1"
+       inkscape:persp3d-origin="320 : 160 : 1"
+       id="perspective36" />
+    <marker
+       style="overflow:visible"
+       id="TriangleOutM"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path3264" />
+    </marker>
+    <inkscape:perspective
+       id="perspective2517"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3469"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.71356275"
+     inkscape:cx="278.3861"
+     inkscape:cy="232.26388"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
+     inkscape:window-x="0"
+     inkscape:window-y="45"
+     showgrid="false" />
+  <metadata
+     id="metadata2165">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.02071929;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2.5999999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4824"
+       width="636.10229"
+       height="476.34061"
+       x="2.8736696"
+       y="2.1871419"
+       rx="0" />
+    <image
+       y="2.7588511"
+       x="4.1077957"
+       id="image2519"
+       height="478"
+       width="632.2326"
+       sodipodi:absref="/home/ugo/workspace3.3/br.puc.molic.rcp/Semiotic_90-2.jpg"
+       xlink:href="Semiotic_90-2.jpg"
+       style="opacity:0.35064935" />
+    <text
+       xml:space="preserve"
+       style="font-size:85;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="25.147596"
+       y="311.57318"
+       id="text2168"><tspan
+         sodipodi:role="line"
+         id="tspan2170"
+         x="25.147596"
+         y="311.57318"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold;font-size:85">MoLIC</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 19.361702,314.55886 L 618.28369,314.55886 L 618.28369,315.84964"
+       id="path3147" />
+    <rect
+       style="opacity:0.64935063;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2.5999999;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3299"
+       width="633.4411"
+       height="159.7617"
+       x="4.2042551"
+       y="316.03403" />
+    <image
+       y="409.34607"
+       x="561.09015"
+       id="image3255"
+       height="66"
+       width="75"
+       sodipodi:absref="/home/ugo/workspace3.3/br.puc.molic.diagram/icons/wizban/NewMolicWizard.gif"
+       xlink:href="/home/ugo/workspace3.3/br.puc.molic.diagram/icons/wizban/NewMolicWizard.gif" />
+    <g
+       id="g3431"
+       inkscape:label="Camada 1"
+       transform="matrix(0.2737312,0,0,0.2737312,491.0915,257.93572)">
+      <rect
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         y="54.864628"
+         x="20.507362"
+         height="142.73976"
+         width="210.62201"
+         id="rect3136"
+         style="fill:#ffffff;fill-opacity:1;stroke:#060000;stroke-width:6.20567846;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+      <text
+         transform="scale(0.9255404,1.0804499)"
+         id="text2210"
+         y="137.77133"
+         x="24.223482"
+         style="font-size:58.06275558px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Ani"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;font-family:MgOpen Modata"
+           y="137.77133"
+           x="24.223482"
+           id="tspan2212"
+           sodipodi:role="line">&lt;&lt;...&gt;&gt;</tspan></text>
+    </g>
+    <g
+       id="g3490"
+       inkscape:label="Camada 1"
+       transform="matrix(0.2527427,0,0,0.2527427,373.36612,254.30817)">
+      <rect
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         ry="22.20225"
+         rx="22.20225"
+         y="20.15254"
+         x="21.15061"
+         height="209.33551"
+         width="209.33551"
+         id="rect3492"
+         style="fill:#ffffff;fill-opacity:1;stroke:#060000;stroke-width:7.49217367;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3140"
+         d="M 18.603951,72.994463 L 229.88324,72.994463"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.49217367;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g3750"
+       inkscape:label="Camada 1"
+       transform="matrix(0.2514995,0,0,0.2514995,432.10254,261.107)">
+      <rect
+         rx="20"
+         ry="20"
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         y="54.864628"
+         x="20.507362"
+         height="142.73976"
+         width="210.62201"
+         id="rect3752"
+         style="fill:#c3c3c3;fill-opacity:1;stroke:#000000;stroke-width:6.20567846;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+    </g>
+    <g
+       id="g3831"
+       inkscape:label="Camada 1"
+       transform="matrix(0.1844359,0,0,0.1844359,584.36745,289.86218)">
+      <rect
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         y="18.738325"
+         x="19.736397"
+         height="209.33551"
+         width="209.33551"
+         id="rect3833"
+         style="fill:#130d0d;fill-opacity:1;stroke:#060000;stroke-width:7.49217367;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+    </g>
+    <g
+       id="g3485">
+      <rect
+         transform="scale(1,-1)"
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         ry="5.5832396"
+         rx="5.5832396"
+         y="-369.72806"
+         x="379.03223"
+         height="52.641979"
+         width="52.641979"
+         id="rect3837"
+         style="opacity:0.18000004;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.8840704;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3839"
+         d="M 378.39181,356.43981 L 431.52259,356.43981"
+         style="opacity:0.18000004;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.8840704;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4810"
+       inkscape:label="Camada 1"
+       transform="matrix(0.2509864,0,0,-0.2509864,431.52215,368.75984)"
+       style="opacity:0.18000004">
+      <rect
+         rx="20"
+         ry="20"
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         y="54.864628"
+         x="20.507362"
+         height="142.73976"
+         width="210.62201"
+         id="rect4812"
+         style="fill:#c3c3c3;fill-opacity:1;stroke:#000000;stroke-width:6.20567846;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+    </g>
+    <g
+       id="g4814"
+       inkscape:label="Camada 1"
+       transform="matrix(0.2716499,0,0,-0.2716499,491.15484,370.91192)"
+       style="opacity:0.18000004">
+      <rect
+         inkscape:export-ydpi="20.18"
+         inkscape:export-xdpi="20.18"
+         y="54.864628"
+         x="20.507362"
+         height="142.73976"
+         width="210.62201"
+         id="rect4816"
+         style="fill:#ffffff;fill-opacity:1;stroke:#060000;stroke-width:6.20567846;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-opacity:0.95833333" />
+      <text
+         transform="scale(0.9255404,1.0804499)"
+         id="text4818"
+         y="137.77133"
+         x="24.223482"
+         style="font-size:58.06275558px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Ani"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;font-family:MgOpen Modata"
+           y="137.77133"
+           x="24.223482"
+           id="tspan4820"
+           sodipodi:role="line">&lt;&lt;...&gt;&gt;</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:84.99999703;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;opacity:0.09090911000000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold"
+       x="23.708952"
+       y="-321.50635"
+       id="text3421"
+       transform="scale(1.0137438,-0.9864426)"><tspan
+         sodipodi:role="line"
+         id="tspan3423"
+         x="23.708952"
+         y="-321.50635"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch Bold;font-size:84.99999703">MoLIC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.3329525px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="22.388838"
+       y="245.21602"
+       id="text3479"><tspan
+         sodipodi:role="line"
+         id="tspan3481"
+         x="22.388838"
+         y="245.21602">Modeling Language for Interaction as Conversation</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Scene"
+        description="Create new Scene">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/scene_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/scene_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Opening Point"
+        description="Create new Opening Point">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/openingpoint_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/openingpoint_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Closing Point"
+        description="Create new Closing Point">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/closingpoint_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/closingpoint_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:PaletteSeparator"/>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="System Process"
+        description="Create new SystemProcess">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/systemprocess_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/systemprocess_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Monologue"
+        description="Create new Monologue">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/monologue_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/monologue_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Ubiquitous Access"
+        description="Create new Ubiquitous Access">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/ubiquitous_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/ubiquitous_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:PaletteSeparator"/>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="Utterance"
+        description="Create new Utterance">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/utterance_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/utterance_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:CreationTool"
+        title="BRTUtterance"
+        description="Create new Utterance">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/utterance_small.png"
+          bundle="br.puc.molic"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="icons/utterance_big.png"
+          bundle="br.puc.molic"/>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

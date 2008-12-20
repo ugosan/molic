@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: br.puc.molic; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Export-Package: br.puc.molic;uses:="org.eclipse.emf.ecore,org.eclipse.emf.common.util",
+ br.puc.molic.impl;
+  uses:="br.puc.molic,
+   org.eclipse.emf.ecore,
+   org.eclipse.emf.common.util,
+   org.eclipse.emf.common.notify,
+   org.eclipse.emf.ecore.impl",
+ br.puc.molic.util;
+  uses:="br.puc.molic,
+   org.eclipse.emf.ecore,
+   org.eclipse.emf.common.notify.impl,
+   org.eclipse.emf.common.notify"
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Eclipse-LazyStart: true
