@@ -8,11 +8,14 @@ import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 
 import br.puc.molic.diagram.providers.MolicElementTypes;
 
-import com.ugosan.omnimodeling.sketch.SketchTool;
+//import com.ugosan.omnimodeling.sketch.SketchTool;
 
-public class MyTool extends SketchTool {
+/**
+ * OmniModeling tool
+ */
+public class MyTool { //extends SketchTool {
 
-	
+	/*
 	@Override
 	public ArrayList<IElementType> getTypes() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>();
@@ -34,4 +37,5 @@ public class MyTool extends SketchTool {
 	public IElementType getDashedConnection(){
 		return MolicElementTypes.BRTUtterance_4002;
 	}
+	*/
 }

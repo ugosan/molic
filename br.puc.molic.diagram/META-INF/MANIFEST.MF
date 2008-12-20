@@ -48,6 +48,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.gmf.runtime.diagram.ui.printing.render,
  org.eclipse.gmf.runtime.notation.edit,
  org.eclipse.ui,
- com.ugosan.omnimodeling.diagram;bundle-version="1.0.0",
  br.puc.molic.diagram
 Eclipse-LazyStart: true
