@@ -17,16 +17,20 @@
             xsi:type="gmfgraph:ConstantColor"
             value="black"/>
         <preferredSize
-            dx="100"
-            dy="60"/>
+            dx="150"
+            dy="100"/>
         <children
             xsi:type="gmfgraph:Label"
             name="SceneNameFigure"
-            text="&lt;...>">
+            text="Untitled Scene">
           <layoutData
               xsi:type="gmfgraph:GridLayoutData"
               grabExcessHorizontalSpace="true"
               verticalAlignment="BEGINNING"/>
+          <font
+              xsi:type="gmfgraph:BasicFont"
+              faceName="sans"
+              height="10"/>
         </children>
         <children
             xsi:type="gmfgraph:Label"

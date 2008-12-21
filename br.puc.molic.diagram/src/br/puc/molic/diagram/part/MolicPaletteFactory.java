@@ -50,7 +50,7 @@ public class MolicPaletteFactory {
 		paletteContainer.add(createUbiquitousAccess7CreationTool());
 		paletteContainer.add(new PaletteSeparator());
 		paletteContainer.add(createUtterance9CreationTool());
-		paletteContainer.add(createBRTUtterance10CreationTool());
+		paletteContainer.add(createBreakdown10CreationTool());
 		return paletteContainer;
 	}
 
@@ -178,12 +178,12 @@ public class MolicPaletteFactory {
 	/**
 	 * @generated
 	 */
-	private ToolEntry createBRTUtterance10CreationTool() {
+	private ToolEntry createBreakdown10CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
 		types.add(MolicElementTypes.BRTUtterance_4002);
 		LinkToolEntry entry = new LinkToolEntry(
-				Messages.BRTUtterance10CreationTool_title,
-				Messages.BRTUtterance10CreationTool_desc, types);
+				Messages.Breakdown10CreationTool_title,
+				Messages.Breakdown10CreationTool_desc, types);
 		entry
 				.setSmallIcon(MolicDiagramEditorPlugin
 						.findImageDescriptor("/br.puc.molic/icons/utterance_small.png")); //$NON-NLS-1$

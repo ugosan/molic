@@ -101,8 +101,8 @@
     </tools>
     <tools
         xsi:type="gmftool:CreationTool"
-        title="BRTUtterance"
-        description="Create new Utterance">
+        title="Breakdown"
+        description="Create new Brekdown Utterance">
       <smallIcon
           xsi:type="gmftool:BundleImage"
           path="icons/utterance_small.png"

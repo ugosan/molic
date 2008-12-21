@@ -353,12 +353,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String BRTUtterance10CreationTool_title;
+	public static String Breakdown10CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String BRTUtterance10CreationTool_desc;
+	public static String Breakdown10CreationTool_desc;
 
 	/**
 	 * @generated

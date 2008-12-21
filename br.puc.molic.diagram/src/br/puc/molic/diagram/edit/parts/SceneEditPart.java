@@ -174,7 +174,7 @@ public class SceneEditPart extends ShapeNodeEditPart {
 	 */
 	protected NodeFigure createNodePlate() {
 		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(getMapMode()
-				.DPtoLP(100), getMapMode().DPtoLP(60));
+				.DPtoLP(150), getMapMode().DPtoLP(100));
 		return result;
 	}
 
@@ -258,8 +258,8 @@ public class SceneEditPart extends ShapeNodeEditPart {
 					getMapMode().DPtoLP(8)));
 			this.setLineWidth(2);
 			this.setForegroundColor(ColorConstants.black);
-			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(60)));
+			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(150),
+					getMapMode().DPtoLP(100)));
 			createContents();
 		}
 
@@ -331,5 +331,11 @@ public class SceneEditPart extends ShapeNodeEditPart {
 		}
 
 	}
+
+	/**
+	 * @generated
+	 */
+	static final Font FFIGURESCENENAMEFIGURE_FONT = new Font(Display
+			.getCurrent(), "sans", 10, SWT.NORMAL);
 
 }
