@@ -7,7 +7,7 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//Scene"/>
@@ -37,7 +37,7 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//SystemProcess"/>
@@ -50,7 +50,7 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//Monologue"/>
@@ -72,7 +72,7 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//UbiquitousAccess"/>
@@ -85,7 +85,7 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//OpeningPoint"/>
@@ -98,7 +98,7 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="molic.ecore#//Diagram/elements"/>
+        href="molic.ecore#//Diagram/element"/>
     <ownedChild>
       <domainMetaElement
           href="molic.ecore#//ClosingPoint"/>
@@ -120,7 +120,7 @@
           href="molic.ecore#//Connection/label"/>
     </labelMappings>
     <containmentFeature
-        href="molic.ecore#//Diagram/utterances"/>
+        href="molic.ecore#//Diagram/utterance"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="molic.gmftool#//@palette/@tools.8"/>
@@ -145,7 +145,7 @@
           href="molic.ecore#//Connection/label"/>
     </labelMappings>
     <containmentFeature
-        href="molic.ecore#//Diagram/utterances"/>
+        href="molic.ecore#//Diagram/utterance"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="molic.gmftool#//@palette/@tools.9"/>

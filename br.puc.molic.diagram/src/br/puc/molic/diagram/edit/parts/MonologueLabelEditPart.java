@@ -60,7 +60,7 @@ public class MonologueLabelEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5003;
+	public static final int VISUAL_ID = 5006;
 
 	/**
 	 * @generated
@@ -304,7 +304,7 @@ public class MonologueLabelEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			String parserHint = ((View) getModel()).getType();
 			IAdaptable hintAdapter = new MolicParserProvider.HintAdapter(
-					MolicElementTypes.Monologue_2003, getParserElement(),
+					MolicElementTypes.Monologue_2009, getParserElement(),
 					parserHint);
 			parser = ParserService.getInstance().getParser(hintAdapter);
 		}

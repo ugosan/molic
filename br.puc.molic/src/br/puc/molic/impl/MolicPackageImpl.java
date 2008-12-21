@@ -192,7 +192,7 @@ public class MolicPackageImpl extends EPackageImpl implements MolicPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiagram_Elements() {
+	public EReference getDiagram_Element() {
 		return (EReference)diagramEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -201,7 +201,7 @@ public class MolicPackageImpl extends EPackageImpl implements MolicPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiagram_Utterances() {
+	public EReference getDiagram_Utterance() {
 		return (EReference)diagramEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -378,8 +378,8 @@ public class MolicPackageImpl extends EPackageImpl implements MolicPackage {
 
 		// Create classes and their features
 		diagramEClass = createEClass(DIAGRAM);
-		createEReference(diagramEClass, DIAGRAM__ELEMENTS);
-		createEReference(diagramEClass, DIAGRAM__UTTERANCES);
+		createEReference(diagramEClass, DIAGRAM__ELEMENT);
+		createEReference(diagramEClass, DIAGRAM__UTTERANCE);
 
 		elementEClass = createEClass(ELEMENT);
 
@@ -443,8 +443,8 @@ public class MolicPackageImpl extends EPackageImpl implements MolicPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(diagramEClass, Diagram.class, "Diagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDiagram_Elements(), this.getElement(), null, "elements", null, 0, -1, Diagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDiagram_Utterances(), this.getConnection(), null, "utterances", null, 0, -1, Diagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDiagram_Element(), this.getElement(), null, "element", null, 0, -1, Diagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDiagram_Utterance(), this.getConnection(), null, "utterance", null, 0, -1, Diagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

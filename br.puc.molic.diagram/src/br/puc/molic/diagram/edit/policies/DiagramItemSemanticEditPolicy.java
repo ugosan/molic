@@ -30,45 +30,45 @@ public class DiagramItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (MolicElementTypes.Scene_2001 == req.getElementType()) {
+		if (MolicElementTypes.Scene_2007 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new SceneCreateCommand(req));
 		}
-		if (MolicElementTypes.SystemProcess_2002 == req.getElementType()) {
+		if (MolicElementTypes.SystemProcess_2008 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new SystemProcessCreateCommand(req));
 		}
-		if (MolicElementTypes.Monologue_2003 == req.getElementType()) {
+		if (MolicElementTypes.Monologue_2009 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new MonologueCreateCommand(req));
 		}
-		if (MolicElementTypes.UbiquitousAccess_2004 == req.getElementType()) {
+		if (MolicElementTypes.UbiquitousAccess_2010 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new UbiquitousAccessCreateCommand(req));
 		}
-		if (MolicElementTypes.OpeningPoint_2005 == req.getElementType()) {
+		if (MolicElementTypes.OpeningPoint_2011 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new OpeningPointCreateCommand(req));
 		}
-		if (MolicElementTypes.ClosingPoint_2006 == req.getElementType()) {
+		if (MolicElementTypes.ClosingPoint_2012 == req.getElementType()) {
 			if (req.getContainmentFeature() == null) {
 				req.setContainmentFeature(MolicPackage.eINSTANCE
-						.getDiagram_Elements());
+						.getDiagram_Element());
 			}
 			return getGEFWrapper(new ClosingPointCreateCommand(req));
 		}

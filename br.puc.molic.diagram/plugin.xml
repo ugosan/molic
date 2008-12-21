@@ -304,62 +304,62 @@ Teste de nota de copyright do Molic
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.Scene_2001"
-               name="%metatype.name.Scene_2001"
+               id="br.puc.molic.diagram.Scene_2007"
+               name="%metatype.name.Scene_2007"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Scene"
                edithelper="br.puc.molic.diagram.edit.helpers.SceneEditHelper">
-            <param name="semanticHint" value="2001"/>
+            <param name="semanticHint" value="2007"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.SystemProcess_2002"
-               name="%metatype.name.SystemProcess_2002"
+               id="br.puc.molic.diagram.SystemProcess_2008"
+               name="%metatype.name.SystemProcess_2008"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="SystemProcess"
                edithelper="br.puc.molic.diagram.edit.helpers.SystemProcessEditHelper">
-            <param name="semanticHint" value="2002"/>
+            <param name="semanticHint" value="2008"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.Monologue_2003"
-               name="%metatype.name.Monologue_2003"
+               id="br.puc.molic.diagram.Monologue_2009"
+               name="%metatype.name.Monologue_2009"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Monologue"
                edithelper="br.puc.molic.diagram.edit.helpers.MonologueEditHelper">
-            <param name="semanticHint" value="2003"/>
+            <param name="semanticHint" value="2009"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.UbiquitousAccess_2004"
-               name="%metatype.name.UbiquitousAccess_2004"
+               id="br.puc.molic.diagram.UbiquitousAccess_2010"
+               name="%metatype.name.UbiquitousAccess_2010"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="UbiquitousAccess"
                edithelper="br.puc.molic.diagram.edit.helpers.UbiquitousAccessEditHelper">
-            <param name="semanticHint" value="2004"/>
+            <param name="semanticHint" value="2010"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.OpeningPoint_2005"
-               name="%metatype.name.OpeningPoint_2005"
+               id="br.puc.molic.diagram.OpeningPoint_2011"
+               name="%metatype.name.OpeningPoint_2011"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="OpeningPoint"
                edithelper="br.puc.molic.diagram.edit.helpers.OpeningPointEditHelper">
-            <param name="semanticHint" value="2005"/>
+            <param name="semanticHint" value="2011"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
          <metamodelType
-               id="br.puc.molic.diagram.ClosingPoint_2006"
-               name="%metatype.name.ClosingPoint_2006"
+               id="br.puc.molic.diagram.ClosingPoint_2012"
+               name="%metatype.name.ClosingPoint_2012"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="ClosingPoint"
                edithelper="br.puc.molic.diagram.edit.helpers.ClosingPointEditHelper">
-            <param name="semanticHint" value="2006"/>
+            <param name="semanticHint" value="2012"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="molic">
@@ -395,12 +395,12 @@ Teste de nota de copyright do Molic
       </clientContext> 
       <binding context="MolicClientContext">
          <elementType ref="br.puc.molic.diagram.Diagram_1000"/>
-         <elementType ref="br.puc.molic.diagram.Scene_2001"/>
-         <elementType ref="br.puc.molic.diagram.SystemProcess_2002"/>
-         <elementType ref="br.puc.molic.diagram.Monologue_2003"/>
-         <elementType ref="br.puc.molic.diagram.UbiquitousAccess_2004"/>
-         <elementType ref="br.puc.molic.diagram.OpeningPoint_2005"/>
-         <elementType ref="br.puc.molic.diagram.ClosingPoint_2006"/>
+         <elementType ref="br.puc.molic.diagram.Scene_2007"/>
+         <elementType ref="br.puc.molic.diagram.SystemProcess_2008"/>
+         <elementType ref="br.puc.molic.diagram.Monologue_2009"/>
+         <elementType ref="br.puc.molic.diagram.UbiquitousAccess_2010"/>
+         <elementType ref="br.puc.molic.diagram.OpeningPoint_2011"/>
+         <elementType ref="br.puc.molic.diagram.ClosingPoint_2012"/>
          <elementType ref="br.puc.molic.diagram.Utterance_4001"/>
          <elementType ref="br.puc.molic.diagram.BRTUtterance_4002"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>

@@ -38,12 +38,12 @@ public class MolicModelingAssistantProvider extends ModelingAssistantProvider {
 				.getAdapter(IGraphicalEditPart.class);
 		if (editPart instanceof DiagramEditPart) {
 			List types = new ArrayList();
-			types.add(MolicElementTypes.Scene_2001);
-			types.add(MolicElementTypes.SystemProcess_2002);
-			types.add(MolicElementTypes.Monologue_2003);
-			types.add(MolicElementTypes.UbiquitousAccess_2004);
-			types.add(MolicElementTypes.OpeningPoint_2005);
-			types.add(MolicElementTypes.ClosingPoint_2006);
+			types.add(MolicElementTypes.Scene_2007);
+			types.add(MolicElementTypes.SystemProcess_2008);
+			types.add(MolicElementTypes.Monologue_2009);
+			types.add(MolicElementTypes.UbiquitousAccess_2010);
+			types.add(MolicElementTypes.OpeningPoint_2011);
+			types.add(MolicElementTypes.ClosingPoint_2012);
 			return types;
 		}
 		return Collections.EMPTY_LIST;

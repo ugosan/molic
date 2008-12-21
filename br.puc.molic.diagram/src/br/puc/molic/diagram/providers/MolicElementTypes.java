@@ -154,20 +154,20 @@ public class MolicElementTypes extends ElementInitializers {
 
 			elements.put(Diagram_1000, MolicPackage.eINSTANCE.getDiagram());
 
-			elements.put(Scene_2001, MolicPackage.eINSTANCE.getScene());
+			elements.put(Scene_2007, MolicPackage.eINSTANCE.getScene());
 
-			elements.put(SystemProcess_2002, MolicPackage.eINSTANCE
+			elements.put(SystemProcess_2008, MolicPackage.eINSTANCE
 					.getSystemProcess());
 
-			elements.put(Monologue_2003, MolicPackage.eINSTANCE.getMonologue());
+			elements.put(Monologue_2009, MolicPackage.eINSTANCE.getMonologue());
 
-			elements.put(UbiquitousAccess_2004, MolicPackage.eINSTANCE
+			elements.put(UbiquitousAccess_2010, MolicPackage.eINSTANCE
 					.getUbiquitousAccess());
 
-			elements.put(OpeningPoint_2005, MolicPackage.eINSTANCE
+			elements.put(OpeningPoint_2011, MolicPackage.eINSTANCE
 					.getOpeningPoint());
 
-			elements.put(ClosingPoint_2006, MolicPackage.eINSTANCE
+			elements.put(ClosingPoint_2012, MolicPackage.eINSTANCE
 					.getClosingPoint());
 
 			elements.put(Utterance_4001, MolicPackage.eINSTANCE.getUtterance());
@@ -198,32 +198,32 @@ public class MolicElementTypes extends ElementInitializers {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Scene_2001 = getElementType("br.puc.molic.diagram.Scene_2001"); //$NON-NLS-1$
+	public static final IElementType Scene_2007 = getElementType("br.puc.molic.diagram.Scene_2007"); //$NON-NLS-1$
 
 	/**
 	 * @generated
 	 */
-	public static final IElementType SystemProcess_2002 = getElementType("br.puc.molic.diagram.SystemProcess_2002"); //$NON-NLS-1$
+	public static final IElementType SystemProcess_2008 = getElementType("br.puc.molic.diagram.SystemProcess_2008"); //$NON-NLS-1$
 
 	/**
 	 * @generated
 	 */
-	public static final IElementType Monologue_2003 = getElementType("br.puc.molic.diagram.Monologue_2003"); //$NON-NLS-1$
+	public static final IElementType Monologue_2009 = getElementType("br.puc.molic.diagram.Monologue_2009"); //$NON-NLS-1$
 
 	/**
 	 * @generated
 	 */
-	public static final IElementType UbiquitousAccess_2004 = getElementType("br.puc.molic.diagram.UbiquitousAccess_2004"); //$NON-NLS-1$
+	public static final IElementType UbiquitousAccess_2010 = getElementType("br.puc.molic.diagram.UbiquitousAccess_2010"); //$NON-NLS-1$
 
 	/**
 	 * @generated
 	 */
-	public static final IElementType OpeningPoint_2005 = getElementType("br.puc.molic.diagram.OpeningPoint_2005"); //$NON-NLS-1$
+	public static final IElementType OpeningPoint_2011 = getElementType("br.puc.molic.diagram.OpeningPoint_2011"); //$NON-NLS-1$
 
 	/**
 	 * @generated
 	 */
-	public static final IElementType ClosingPoint_2006 = getElementType("br.puc.molic.diagram.ClosingPoint_2006"); //$NON-NLS-1$
+	public static final IElementType ClosingPoint_2012 = getElementType("br.puc.molic.diagram.ClosingPoint_2012"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -242,12 +242,12 @@ public class MolicElementTypes extends ElementInitializers {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet();
 			KNOWN_ELEMENT_TYPES.add(Diagram_1000);
-			KNOWN_ELEMENT_TYPES.add(Scene_2001);
-			KNOWN_ELEMENT_TYPES.add(SystemProcess_2002);
-			KNOWN_ELEMENT_TYPES.add(Monologue_2003);
-			KNOWN_ELEMENT_TYPES.add(UbiquitousAccess_2004);
-			KNOWN_ELEMENT_TYPES.add(OpeningPoint_2005);
-			KNOWN_ELEMENT_TYPES.add(ClosingPoint_2006);
+			KNOWN_ELEMENT_TYPES.add(Scene_2007);
+			KNOWN_ELEMENT_TYPES.add(SystemProcess_2008);
+			KNOWN_ELEMENT_TYPES.add(Monologue_2009);
+			KNOWN_ELEMENT_TYPES.add(UbiquitousAccess_2010);
+			KNOWN_ELEMENT_TYPES.add(OpeningPoint_2011);
+			KNOWN_ELEMENT_TYPES.add(ClosingPoint_2012);
 			KNOWN_ELEMENT_TYPES.add(Utterance_4001);
 			KNOWN_ELEMENT_TYPES.add(BRTUtterance_4002);
 		}

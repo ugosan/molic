@@ -426,7 +426,6 @@ public class MolicEditor
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
 				getSite().getPage().closeEditor(MolicEditor.this, false);
-				MolicEditor.this.dispose();
 			}
 			else {
 				removedResources.clear();

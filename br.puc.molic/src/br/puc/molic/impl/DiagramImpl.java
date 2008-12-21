@@ -28,8 +28,8 @@ import br.puc.molic.MolicPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link br.puc.molic.impl.DiagramImpl#getElements <em>Elements</em>}</li>
- *   <li>{@link br.puc.molic.impl.DiagramImpl#getUtterances <em>Utterances</em>}</li>
+ *   <li>{@link br.puc.molic.impl.DiagramImpl#getElement <em>Element</em>}</li>
+ *   <li>{@link br.puc.molic.impl.DiagramImpl#getUtterance <em>Utterance</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,24 +37,24 @@ import br.puc.molic.MolicPackage;
  */
 public class DiagramImpl extends EObjectImpl implements Diagram {
 	/**
-	 * The cached value of the '{@link #getElements() <em>Elements</em>}' containment reference list.
+	 * The cached value of the '{@link #getElement() <em>Element</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getElements()
+	 * @see #getElement()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList elements;
+	protected EList element;
 
 	/**
-	 * The cached value of the '{@link #getUtterances() <em>Utterances</em>}' containment reference list.
+	 * The cached value of the '{@link #getUtterance() <em>Utterance</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUtterances()
+	 * @see #getUtterance()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList utterances;
+	protected EList utterance;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,11 +79,11 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getElements() {
-		if (elements == null) {
-			elements = new EObjectContainmentEList(Element.class, this, MolicPackage.DIAGRAM__ELEMENTS);
+	public EList getElement() {
+		if (element == null) {
+			element = new EObjectContainmentEList(Element.class, this, MolicPackage.DIAGRAM__ELEMENT);
 		}
-		return elements;
+		return element;
 	}
 
 	/**
@@ -91,11 +91,11 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList getUtterances() {
-		if (utterances == null) {
-			utterances = new EObjectContainmentEList(Connection.class, this, MolicPackage.DIAGRAM__UTTERANCES);
+	public EList getUtterance() {
+		if (utterance == null) {
+			utterance = new EObjectContainmentEList(Connection.class, this, MolicPackage.DIAGRAM__UTTERANCE);
 		}
-		return utterances;
+		return utterance;
 	}
 
 	/**
@@ -105,10 +105,10 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 */
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-				return ((InternalEList)getElements()).basicRemove(otherEnd, msgs);
-			case MolicPackage.DIAGRAM__UTTERANCES:
-				return ((InternalEList)getUtterances()).basicRemove(otherEnd, msgs);
+			case MolicPackage.DIAGRAM__ELEMENT:
+				return ((InternalEList)getElement()).basicRemove(otherEnd, msgs);
+			case MolicPackage.DIAGRAM__UTTERANCE:
+				return ((InternalEList)getUtterance()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -120,10 +120,10 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 */
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-				return getElements();
-			case MolicPackage.DIAGRAM__UTTERANCES:
-				return getUtterances();
+			case MolicPackage.DIAGRAM__ELEMENT:
+				return getElement();
+			case MolicPackage.DIAGRAM__UTTERANCE:
+				return getUtterance();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -135,13 +135,13 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 */
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-				getElements().clear();
-				getElements().addAll((Collection)newValue);
+			case MolicPackage.DIAGRAM__ELEMENT:
+				getElement().clear();
+				getElement().addAll((Collection)newValue);
 				return;
-			case MolicPackage.DIAGRAM__UTTERANCES:
-				getUtterances().clear();
-				getUtterances().addAll((Collection)newValue);
+			case MolicPackage.DIAGRAM__UTTERANCE:
+				getUtterance().clear();
+				getUtterance().addAll((Collection)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -154,11 +154,11 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 */
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-				getElements().clear();
+			case MolicPackage.DIAGRAM__ELEMENT:
+				getElement().clear();
 				return;
-			case MolicPackage.DIAGRAM__UTTERANCES:
-				getUtterances().clear();
+			case MolicPackage.DIAGRAM__UTTERANCE:
+				getUtterance().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -171,10 +171,10 @@ public class DiagramImpl extends EObjectImpl implements Diagram {
 	 */
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-				return elements != null && !elements.isEmpty();
-			case MolicPackage.DIAGRAM__UTTERANCES:
-				return utterances != null && !utterances.isEmpty();
+			case MolicPackage.DIAGRAM__ELEMENT:
+				return element != null && !element.isEmpty();
+			case MolicPackage.DIAGRAM__UTTERANCE:
+				return utterance != null && !utterance.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

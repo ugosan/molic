@@ -59,7 +59,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createScene1CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.Scene_2001);
+		types.add(MolicElementTypes.Scene_2007);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.Scene1CreationTool_title,
 				Messages.Scene1CreationTool_desc, types);
@@ -75,7 +75,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createOpeningPoint2CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.OpeningPoint_2005);
+		types.add(MolicElementTypes.OpeningPoint_2011);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.OpeningPoint2CreationTool_title,
 				Messages.OpeningPoint2CreationTool_desc, types);
@@ -93,7 +93,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createClosingPoint3CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.ClosingPoint_2006);
+		types.add(MolicElementTypes.ClosingPoint_2012);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.ClosingPoint3CreationTool_title,
 				Messages.ClosingPoint3CreationTool_desc, types);
@@ -111,7 +111,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createSystemProcess5CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.SystemProcess_2002);
+		types.add(MolicElementTypes.SystemProcess_2008);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.SystemProcess5CreationTool_title,
 				Messages.SystemProcess5CreationTool_desc, types);
@@ -129,7 +129,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createMonologue6CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.Monologue_2003);
+		types.add(MolicElementTypes.Monologue_2009);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.Monologue6CreationTool_title,
 				Messages.Monologue6CreationTool_desc, types);
@@ -146,7 +146,7 @@ public class MolicPaletteFactory {
 	 */
 	private ToolEntry createUbiquitousAccess7CreationTool() {
 		List/*<IElementType>*/types = new ArrayList/*<IElementType>*/(1);
-		types.add(MolicElementTypes.UbiquitousAccess_2004);
+		types.add(MolicElementTypes.UbiquitousAccess_2010);
 		NodeToolEntry entry = new NodeToolEntry(
 				Messages.UbiquitousAccess7CreationTool_title,
 				Messages.UbiquitousAccess7CreationTool_desc, types);

@@ -48,8 +48,7 @@ public class UtteranceCreateCommand extends CreateElementCommand {
 		this.source = source;
 		this.target = target;
 		if (request.getContainmentFeature() == null) {
-			setContainmentFeature(MolicPackage.eINSTANCE
-					.getDiagram_Utterances());
+			setContainmentFeature(MolicPackage.eINSTANCE.getDiagram_Utterance());
 		}
 
 		// Find container element for the new link.
@@ -95,7 +94,7 @@ public class UtteranceCreateCommand extends CreateElementCommand {
 	 */
 	protected EObject doDefaultElementCreation() {
 		Utterance newElement = MolicFactory.eINSTANCE.createUtterance();
-		getContainer().getUtterances().add(newElement);
+		getContainer().getUtterance().add(newElement);
 		newElement.setSource(getSource());
 		newElement.setTarget(getTarget());
 		return newElement;

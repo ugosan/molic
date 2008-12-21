@@ -33,22 +33,22 @@ public class MolicParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser sceneName_5001Parser;
+	private IParser sceneName_5004Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getSceneName_5001Parser() {
-		if (sceneName_5001Parser == null) {
-			sceneName_5001Parser = createSceneName_5001Parser();
+	private IParser getSceneName_5004Parser() {
+		if (sceneName_5004Parser == null) {
+			sceneName_5004Parser = createSceneName_5004Parser();
 		}
-		return sceneName_5001Parser;
+		return sceneName_5004Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected IParser createSceneName_5001Parser() {
+	protected IParser createSceneName_5004Parser() {
 		EAttribute[] features = new EAttribute[] { MolicPackage.eINSTANCE
 				.getScene_Name(), };
 		MessageFormatParser parser = new MessageFormatParser(features);
@@ -58,22 +58,22 @@ public class MolicParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser sceneDialogue_5002Parser;
+	private IParser sceneDialogue_5005Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getSceneDialogue_5002Parser() {
-		if (sceneDialogue_5002Parser == null) {
-			sceneDialogue_5002Parser = createSceneDialogue_5002Parser();
+	private IParser getSceneDialogue_5005Parser() {
+		if (sceneDialogue_5005Parser == null) {
+			sceneDialogue_5005Parser = createSceneDialogue_5005Parser();
 		}
-		return sceneDialogue_5002Parser;
+		return sceneDialogue_5005Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected IParser createSceneDialogue_5002Parser() {
+	protected IParser createSceneDialogue_5005Parser() {
 		EAttribute[] features = new EAttribute[] { MolicPackage.eINSTANCE
 				.getScene_Dialogue(), };
 		MessageFormatParser parser = new MessageFormatParser(features);
@@ -83,22 +83,22 @@ public class MolicParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser monologueLabel_5003Parser;
+	private IParser monologueLabel_5006Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getMonologueLabel_5003Parser() {
-		if (monologueLabel_5003Parser == null) {
-			monologueLabel_5003Parser = createMonologueLabel_5003Parser();
+	private IParser getMonologueLabel_5006Parser() {
+		if (monologueLabel_5006Parser == null) {
+			monologueLabel_5006Parser = createMonologueLabel_5006Parser();
 		}
-		return monologueLabel_5003Parser;
+		return monologueLabel_5006Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected IParser createMonologueLabel_5003Parser() {
+	protected IParser createMonologueLabel_5006Parser() {
 		EAttribute[] features = new EAttribute[] { MolicPackage.eINSTANCE
 				.getMonologue_Label(), };
 		MessageFormatParser parser = new MessageFormatParser(features);
@@ -164,11 +164,11 @@ public class MolicParserProvider extends AbstractProvider implements
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
 		case SceneNameEditPart.VISUAL_ID:
-			return getSceneName_5001Parser();
+			return getSceneName_5004Parser();
 		case SceneDialogueEditPart.VISUAL_ID:
-			return getSceneDialogue_5002Parser();
+			return getSceneDialogue_5005Parser();
 		case MonologueLabelEditPart.VISUAL_ID:
-			return getMonologueLabel_5003Parser();
+			return getMonologueLabel_5006Parser();
 		case UtteranceLabelEditPart.VISUAL_ID:
 			return getUtteranceLabel_6001Parser();
 		case BRTUtteranceLabelEditPart.VISUAL_ID:

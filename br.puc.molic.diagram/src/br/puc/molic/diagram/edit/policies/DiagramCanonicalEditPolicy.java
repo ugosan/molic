@@ -107,7 +107,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		if (myFeaturesToSynchronize == null) {
 			myFeaturesToSynchronize = new HashSet();
 			myFeaturesToSynchronize.add(MolicPackage.eINSTANCE
-					.getDiagram_Elements());
+					.getDiagram_Element());
 		}
 		return myFeaturesToSynchronize;
 	}
@@ -235,7 +235,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case SceneEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getScene_2001ContainedLinks(view));
+						.getScene_2007ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -246,7 +246,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case SystemProcessEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getSystemProcess_2002ContainedLinks(view));
+						.getSystemProcess_2008ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -257,7 +257,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case MonologueEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getMonologue_2003ContainedLinks(view));
+						.getMonologue_2009ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -268,7 +268,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case UbiquitousAccessEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getUbiquitousAccess_2004ContainedLinks(view));
+						.getUbiquitousAccess_2010ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -279,7 +279,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case OpeningPointEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getOpeningPoint_2005ContainedLinks(view));
+						.getOpeningPoint_2011ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -290,7 +290,7 @@ public class DiagramCanonicalEditPolicy extends CanonicalConnectionEditPolicy {
 		case ClosingPointEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(MolicDiagramUpdater
-						.getClosingPoint_2006ContainedLinks(view));
+						.getClosingPoint_2012ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$

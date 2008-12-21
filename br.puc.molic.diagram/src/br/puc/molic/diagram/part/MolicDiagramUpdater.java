@@ -63,7 +63,7 @@ public class MolicDiagramUpdater {
 		}
 		Diagram modelElement = (Diagram) view.getElement();
 		List result = new LinkedList();
-		for (Iterator it = modelElement.getElements().iterator(); it.hasNext();) {
+		for (Iterator it = modelElement.getElement().iterator(); it.hasNext();) {
 			Element childElement = (Element) it.next();
 			int visualID = MolicVisualIDRegistry.getNodeVisualID(view,
 					childElement);
@@ -103,17 +103,17 @@ public class MolicDiagramUpdater {
 		case DiagramEditPart.VISUAL_ID:
 			return getDiagram_1000ContainedLinks(view);
 		case SceneEditPart.VISUAL_ID:
-			return getScene_2001ContainedLinks(view);
+			return getScene_2007ContainedLinks(view);
 		case SystemProcessEditPart.VISUAL_ID:
-			return getSystemProcess_2002ContainedLinks(view);
+			return getSystemProcess_2008ContainedLinks(view);
 		case MonologueEditPart.VISUAL_ID:
-			return getMonologue_2003ContainedLinks(view);
+			return getMonologue_2009ContainedLinks(view);
 		case UbiquitousAccessEditPart.VISUAL_ID:
-			return getUbiquitousAccess_2004ContainedLinks(view);
+			return getUbiquitousAccess_2010ContainedLinks(view);
 		case OpeningPointEditPart.VISUAL_ID:
-			return getOpeningPoint_2005ContainedLinks(view);
+			return getOpeningPoint_2011ContainedLinks(view);
 		case ClosingPointEditPart.VISUAL_ID:
-			return getClosingPoint_2006ContainedLinks(view);
+			return getClosingPoint_2012ContainedLinks(view);
 		case UtteranceEditPart.VISUAL_ID:
 			return getUtterance_4001ContainedLinks(view);
 		case BRTUtteranceEditPart.VISUAL_ID:
@@ -128,17 +128,17 @@ public class MolicDiagramUpdater {
 	public static List getIncomingLinks(View view) {
 		switch (MolicVisualIDRegistry.getVisualID(view)) {
 		case SceneEditPart.VISUAL_ID:
-			return getScene_2001IncomingLinks(view);
+			return getScene_2007IncomingLinks(view);
 		case SystemProcessEditPart.VISUAL_ID:
-			return getSystemProcess_2002IncomingLinks(view);
+			return getSystemProcess_2008IncomingLinks(view);
 		case MonologueEditPart.VISUAL_ID:
-			return getMonologue_2003IncomingLinks(view);
+			return getMonologue_2009IncomingLinks(view);
 		case UbiquitousAccessEditPart.VISUAL_ID:
-			return getUbiquitousAccess_2004IncomingLinks(view);
+			return getUbiquitousAccess_2010IncomingLinks(view);
 		case OpeningPointEditPart.VISUAL_ID:
-			return getOpeningPoint_2005IncomingLinks(view);
+			return getOpeningPoint_2011IncomingLinks(view);
 		case ClosingPointEditPart.VISUAL_ID:
-			return getClosingPoint_2006IncomingLinks(view);
+			return getClosingPoint_2012IncomingLinks(view);
 		case UtteranceEditPart.VISUAL_ID:
 			return getUtterance_4001IncomingLinks(view);
 		case BRTUtteranceEditPart.VISUAL_ID:
@@ -153,17 +153,17 @@ public class MolicDiagramUpdater {
 	public static List getOutgoingLinks(View view) {
 		switch (MolicVisualIDRegistry.getVisualID(view)) {
 		case SceneEditPart.VISUAL_ID:
-			return getScene_2001OutgoingLinks(view);
+			return getScene_2007OutgoingLinks(view);
 		case SystemProcessEditPart.VISUAL_ID:
-			return getSystemProcess_2002OutgoingLinks(view);
+			return getSystemProcess_2008OutgoingLinks(view);
 		case MonologueEditPart.VISUAL_ID:
-			return getMonologue_2003OutgoingLinks(view);
+			return getMonologue_2009OutgoingLinks(view);
 		case UbiquitousAccessEditPart.VISUAL_ID:
-			return getUbiquitousAccess_2004OutgoingLinks(view);
+			return getUbiquitousAccess_2010OutgoingLinks(view);
 		case OpeningPointEditPart.VISUAL_ID:
-			return getOpeningPoint_2005OutgoingLinks(view);
+			return getOpeningPoint_2011OutgoingLinks(view);
 		case ClosingPointEditPart.VISUAL_ID:
-			return getClosingPoint_2006OutgoingLinks(view);
+			return getClosingPoint_2012OutgoingLinks(view);
 		case UtteranceEditPart.VISUAL_ID:
 			return getUtterance_4001OutgoingLinks(view);
 		case BRTUtteranceEditPart.VISUAL_ID:
@@ -188,42 +188,42 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getScene_2001ContainedLinks(View view) {
+	public static List getScene_2007ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List getSystemProcess_2002ContainedLinks(View view) {
+	public static List getSystemProcess_2008ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List getMonologue_2003ContainedLinks(View view) {
+	public static List getMonologue_2009ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List getUbiquitousAccess_2004ContainedLinks(View view) {
+	public static List getUbiquitousAccess_2010ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List getOpeningPoint_2005ContainedLinks(View view) {
+	public static List getOpeningPoint_2011ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List getClosingPoint_2006ContainedLinks(View view) {
+	public static List getClosingPoint_2012ContainedLinks(View view) {
 		return Collections.EMPTY_LIST;
 	}
 
@@ -244,7 +244,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getScene_2001IncomingLinks(View view) {
+	public static List getScene_2007IncomingLinks(View view) {
 		Scene modelElement = (Scene) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -259,7 +259,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getSystemProcess_2002IncomingLinks(View view) {
+	public static List getSystemProcess_2008IncomingLinks(View view) {
 		SystemProcess modelElement = (SystemProcess) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -274,7 +274,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getMonologue_2003IncomingLinks(View view) {
+	public static List getMonologue_2009IncomingLinks(View view) {
 		Monologue modelElement = (Monologue) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -289,7 +289,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getUbiquitousAccess_2004IncomingLinks(View view) {
+	public static List getUbiquitousAccess_2010IncomingLinks(View view) {
 		UbiquitousAccess modelElement = (UbiquitousAccess) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -304,7 +304,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getOpeningPoint_2005IncomingLinks(View view) {
+	public static List getOpeningPoint_2011IncomingLinks(View view) {
 		OpeningPoint modelElement = (OpeningPoint) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -319,7 +319,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getClosingPoint_2006IncomingLinks(View view) {
+	public static List getClosingPoint_2012IncomingLinks(View view) {
 		ClosingPoint modelElement = (ClosingPoint) view.getElement();
 		Map crossReferences = EcoreUtil.CrossReferencer.find(view.eResource()
 				.getResourceSet().getResources());
@@ -348,7 +348,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getScene_2001OutgoingLinks(View view) {
+	public static List getScene_2007OutgoingLinks(View view) {
 		Scene modelElement = (Scene) view.getElement();
 		List result = new LinkedList();
 		result
@@ -361,7 +361,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getSystemProcess_2002OutgoingLinks(View view) {
+	public static List getSystemProcess_2008OutgoingLinks(View view) {
 		SystemProcess modelElement = (SystemProcess) view.getElement();
 		List result = new LinkedList();
 		result
@@ -374,7 +374,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getMonologue_2003OutgoingLinks(View view) {
+	public static List getMonologue_2009OutgoingLinks(View view) {
 		Monologue modelElement = (Monologue) view.getElement();
 		List result = new LinkedList();
 		result
@@ -387,7 +387,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getUbiquitousAccess_2004OutgoingLinks(View view) {
+	public static List getUbiquitousAccess_2010OutgoingLinks(View view) {
 		UbiquitousAccess modelElement = (UbiquitousAccess) view.getElement();
 		List result = new LinkedList();
 		result
@@ -400,7 +400,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getOpeningPoint_2005OutgoingLinks(View view) {
+	public static List getOpeningPoint_2011OutgoingLinks(View view) {
 		OpeningPoint modelElement = (OpeningPoint) view.getElement();
 		List result = new LinkedList();
 		result
@@ -413,7 +413,7 @@ public class MolicDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List getClosingPoint_2006OutgoingLinks(View view) {
+	public static List getClosingPoint_2012OutgoingLinks(View view) {
 		ClosingPoint modelElement = (ClosingPoint) view.getElement();
 		List result = new LinkedList();
 		result
@@ -443,7 +443,7 @@ public class MolicDiagramUpdater {
 	private static Collection getContainedTypeModelFacetLinks_Utterance_4001(
 			Diagram container) {
 		Collection result = new LinkedList();
-		for (Iterator links = container.getUtterances().iterator(); links
+		for (Iterator links = container.getUtterance().iterator(); links
 				.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof Utterance) {
@@ -469,7 +469,7 @@ public class MolicDiagramUpdater {
 	private static Collection getContainedTypeModelFacetLinks_BRTUtterance_4002(
 			Diagram container) {
 		Collection result = new LinkedList();
-		for (Iterator links = container.getUtterances().iterator(); links
+		for (Iterator links = container.getUtterance().iterator(); links
 				.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof BRTUtterance) {
@@ -564,7 +564,7 @@ public class MolicDiagramUpdater {
 			return Collections.EMPTY_LIST;
 		}
 		Collection result = new LinkedList();
-		for (Iterator links = container.getUtterances().iterator(); links
+		for (Iterator links = container.getUtterance().iterator(); links
 				.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof Utterance) {
@@ -606,7 +606,7 @@ public class MolicDiagramUpdater {
 			return Collections.EMPTY_LIST;
 		}
 		Collection result = new LinkedList();
-		for (Iterator links = container.getUtterances().iterator(); links
+		for (Iterator links = container.getUtterance().iterator(); links
 				.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof BRTUtterance) {

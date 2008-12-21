@@ -8,8 +8,8 @@
   <genPackages prefix="Molic" basePackage="br.puc" disposableProviderFactory="true"
       ecorePackage="molic.ecore#/">
     <genClasses ecoreClass="molic.ecore#//Diagram">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference molic.ecore#//Diagram/elements"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference molic.ecore#//Diagram/utterances"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference molic.ecore#//Diagram/element"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference molic.ecore#//Diagram/utterance"/>
     </genClasses>
     <genClasses image="false" ecoreClass="molic.ecore#//Element"/>
     <genClasses image="false" ecoreClass="molic.ecore#//Connection">

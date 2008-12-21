@@ -75,8 +75,8 @@ public class DiagramItemProvider
 	public Collection getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(MolicPackage.Literals.DIAGRAM__ELEMENTS);
-			childrenFeatures.add(MolicPackage.Literals.DIAGRAM__UTTERANCES);
+			childrenFeatures.add(MolicPackage.Literals.DIAGRAM__ELEMENT);
+			childrenFeatures.add(MolicPackage.Literals.DIAGRAM__UTTERANCE);
 		}
 		return childrenFeatures;
 	}
@@ -124,8 +124,8 @@ public class DiagramItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Diagram.class)) {
-			case MolicPackage.DIAGRAM__ELEMENTS:
-			case MolicPackage.DIAGRAM__UTTERANCES:
+			case MolicPackage.DIAGRAM__ELEMENT:
+			case MolicPackage.DIAGRAM__UTTERANCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -144,42 +144,42 @@ public class DiagramItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createScene()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createMonologue()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createSystemProcess()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createUbiquitousAccess()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createOpeningPoint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__ELEMENTS,
+				(MolicPackage.Literals.DIAGRAM__ELEMENT,
 				 MolicFactory.eINSTANCE.createClosingPoint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__UTTERANCES,
+				(MolicPackage.Literals.DIAGRAM__UTTERANCE,
 				 MolicFactory.eINSTANCE.createUtterance()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MolicPackage.Literals.DIAGRAM__UTTERANCES,
+				(MolicPackage.Literals.DIAGRAM__UTTERANCE,
 				 MolicFactory.eINSTANCE.createBRTUtterance()));
 	}
 

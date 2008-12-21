@@ -26,7 +26,7 @@
     <domainDiagramElement
         href="molic.genmodel#//molic/Diagram"/>
     <topLevelNodes
-        visualID="2001"
+        visualID="2007"
         editPartClassName="SceneEditPart"
         itemSemanticEditPolicyClassName="SceneItemSemanticEditPolicy"
         notationViewFactoryClassName="SceneViewFactory"
@@ -55,12 +55,12 @@
         <metaClass
             href="molic.genmodel#//molic/Scene"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
       <labels
-          visualID="5001"
+          visualID="5004"
           editPartClassName="SceneNameEditPart"
           itemSemanticEditPolicyClassName="SceneNameItemSemanticEditPolicy"
           notationViewFactoryClassName="SceneNameViewFactory">
@@ -79,7 +79,7 @@
         </modelFacet>
       </labels>
       <labels
-          visualID="5002"
+          visualID="5005"
           editPartClassName="SceneDialogueEditPart"
           itemSemanticEditPolicyClassName="SceneDialogueItemSemanticEditPolicy"
           notationViewFactoryClassName="SceneDialogueViewFactory">
@@ -98,7 +98,7 @@
       </labels>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2002"
+        visualID="2008"
         editPartClassName="SystemProcessEditPart"
         itemSemanticEditPolicyClassName="SystemProcessItemSemanticEditPolicy"
         notationViewFactoryClassName="SystemProcessViewFactory"
@@ -128,13 +128,13 @@
         <metaClass
             href="molic.genmodel#//molic/SystemProcess"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2003"
+        visualID="2009"
         editPartClassName="MonologueEditPart"
         itemSemanticEditPolicyClassName="MonologueItemSemanticEditPolicy"
         notationViewFactoryClassName="MonologueViewFactory"
@@ -156,12 +156,12 @@
         <metaClass
             href="molic.genmodel#//molic/Monologue"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
       <labels
-          visualID="5003"
+          visualID="5006"
           editPartClassName="MonologueLabelEditPart"
           itemSemanticEditPolicyClassName="MonologueLabelItemSemanticEditPolicy"
           notationViewFactoryClassName="MonologueLabelViewFactory">
@@ -181,7 +181,7 @@
       </labels>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2004"
+        visualID="2010"
         editPartClassName="UbiquitousAccessEditPart"
         itemSemanticEditPolicyClassName="UbiquitousAccessItemSemanticEditPolicy"
         notationViewFactoryClassName="UbiquitousAccessViewFactory"
@@ -211,13 +211,13 @@
         <metaClass
             href="molic.genmodel#//molic/UbiquitousAccess"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2005"
+        visualID="2011"
         editPartClassName="OpeningPointEditPart"
         itemSemanticEditPolicyClassName="OpeningPointItemSemanticEditPolicy"
         notationViewFactoryClassName="OpeningPointViewFactory"
@@ -247,13 +247,13 @@
         <metaClass
             href="molic.genmodel#//molic/OpeningPoint"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2006"
+        visualID="2012"
         editPartClassName="ClosingPointEditPart"
         itemSemanticEditPolicyClassName="ClosingPointItemSemanticEditPolicy"
         notationViewFactoryClassName="ClosingPointViewFactory"
@@ -284,9 +284,9 @@
         <metaClass
             href="molic.genmodel#//molic/ClosingPoint"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/elements"/>
+            href="molic.genmodel#//molic/Diagram/element"/>
       </modelFacet>
     </topLevelNodes>
     <links
@@ -315,9 +315,9 @@
         <metaClass
             href="molic.genmodel#//molic/Utterance"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/utterances"/>
+            href="molic.genmodel#//molic/Diagram/utterance"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/utterances"/>
+            href="molic.genmodel#//molic/Diagram/utterance"/>
         <sourceMetaFeature
             href="molic.genmodel#//molic/Connection/source"/>
         <targetMetaFeature
@@ -371,9 +371,9 @@
         <metaClass
             href="molic.genmodel#//molic/BRTUtterance"/>
         <containmentMetaFeature
-            href="molic.genmodel#//molic/Diagram/utterances"/>
+            href="molic.genmodel#//molic/Diagram/utterance"/>
         <childMetaFeature
-            href="molic.genmodel#//molic/Diagram/utterances"/>
+            href="molic.genmodel#//molic/Diagram/utterance"/>
         <sourceMetaFeature
             href="molic.genmodel#//molic/Connection/source"/>
         <targetMetaFeature

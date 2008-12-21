@@ -70,22 +70,22 @@ public interface MolicPackage extends EPackage {
 	int DIAGRAM = 0;
 
 	/**
-	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Element</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DIAGRAM__ELEMENTS = 0;
+	int DIAGRAM__ELEMENT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Utterances</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Utterance</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DIAGRAM__UTTERANCES = 1;
+	int DIAGRAM__UTTERANCE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Diagram</em>' class.
@@ -409,26 +409,26 @@ public interface MolicPackage extends EPackage {
 	EClass getDiagram();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link br.puc.molic.Diagram#getElements <em>Elements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link br.puc.molic.Diagram#getElement <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Elements</em>'.
-	 * @see br.puc.molic.Diagram#getElements()
+	 * @return the meta object for the containment reference list '<em>Element</em>'.
+	 * @see br.puc.molic.Diagram#getElement()
 	 * @see #getDiagram()
 	 * @generated
 	 */
-	EReference getDiagram_Elements();
+	EReference getDiagram_Element();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link br.puc.molic.Diagram#getUtterances <em>Utterances</em>}'.
+	 * Returns the meta object for the containment reference list '{@link br.puc.molic.Diagram#getUtterance <em>Utterance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Utterances</em>'.
-	 * @see br.puc.molic.Diagram#getUtterances()
+	 * @return the meta object for the containment reference list '<em>Utterance</em>'.
+	 * @see br.puc.molic.Diagram#getUtterance()
 	 * @see #getDiagram()
 	 * @generated
 	 */
-	EReference getDiagram_Utterances();
+	EReference getDiagram_Utterance();
 
 	/**
 	 * Returns the meta object for class '{@link br.puc.molic.Scene <em>Scene</em>}'.
@@ -629,20 +629,20 @@ public interface MolicPackage extends EPackage {
 		EClass DIAGRAM = eINSTANCE.getDiagram();
 
 		/**
-		 * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Element</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DIAGRAM__ELEMENTS = eINSTANCE.getDiagram_Elements();
+		EReference DIAGRAM__ELEMENT = eINSTANCE.getDiagram_Element();
 
 		/**
-		 * The meta object literal for the '<em><b>Utterances</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Utterance</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DIAGRAM__UTTERANCES = eINSTANCE.getDiagram_Utterances();
+		EReference DIAGRAM__UTTERANCE = eINSTANCE.getDiagram_Utterance();
 
 		/**
 		 * The meta object literal for the '{@link br.puc.molic.impl.SceneImpl <em>Scene</em>}' class.
